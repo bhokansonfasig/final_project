@@ -2,13 +2,10 @@
  * Stub for a file writer.
  */
 
-#ifndef FILE_WRITER_H_INCLUDED
-#define FILE_WRITER_H_INCLUDED
+#pragma once
 
 #include <module.hpp>
 
 class file_writer : public module {
 
 };
-
-#endif

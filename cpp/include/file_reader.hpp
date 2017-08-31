@@ -2,8 +2,7 @@
  * Stub for a file reader.
  */
 
-#ifndef FILE_READER_H_INCLUDED
-#define FILE_READER_H_INCLUDED
+#pragma once
 
 #include <module.hpp>
 #include <string>
@@ -20,4 +19,3 @@ class file_reader : public module {
 		string _path;
 };
 
-#endif

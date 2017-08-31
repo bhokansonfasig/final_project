@@ -4,8 +4,7 @@
  * to module.
  */
 
-#ifndef TRAY_H_INCLUDED
-#define TRAY_H_INCLUDED
+#pragma once
 
 #include <module.hpp>
 #include <iostream>
@@ -27,5 +26,3 @@ void tray::execute(unsigned i=100){
 void tray::add(module* m){
 	std::cout << "added" << std::endl;
 };
-
-#endif
