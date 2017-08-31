@@ -1,1 +1,9 @@
 *~
+
+[Cc][Mm]ake*
+!CMakeLists.txt
+
+Makefile
+
+bin/*
+lib/*
