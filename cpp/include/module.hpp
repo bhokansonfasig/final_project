@@ -1,6 +1,9 @@
 /**
  * Stub for a module base class.
  */
+#ifndef MODULE_H_INCLUDED
+#define MODULE_H_INCLUDED
+
 #include <frame.hpp>
 
 class  module {
@@ -10,3 +13,5 @@ public:
   void process(frame&);
 private:
 };
+
+#endif
