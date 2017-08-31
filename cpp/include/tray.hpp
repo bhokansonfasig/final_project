@@ -3,7 +3,12 @@
  * like icetray, or maybe even std::vector) of pointers 
  * to module.
  */
+
+#ifndef TRAY_H_INCLUDED
+#define TRAY_H_INCLUDED
+
 #include <module.hpp>
+#include <iostream>
 
 class tray {
 public:
@@ -14,3 +19,13 @@ public:
   
 private:
 };
+
+void tray::execute(unsigned i=100){
+	std::cout << "Start executing" << std::endl;
+};
+
+void tray::add(module* m){
+	std::cout << "added" << std::endl;
+};
+
+#endif
