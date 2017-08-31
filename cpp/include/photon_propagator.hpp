@@ -1,6 +1,11 @@
 /**
  * Stub for a file writer.
  */
-class photon_propagator : public module {
+
+#pragma once
+
+#include <module.hpp>
+
+class PhotonPropagator : public Module {
 
 };

@@ -2,6 +2,10 @@
  * Stub for a writer.
  */
 
-class writer : public module {
+#pragma once
+
+#include <module.hpp>
+
+class Writer : public Module {
 
 };
