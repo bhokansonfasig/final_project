@@ -8,13 +8,12 @@ using std::string;
 int main(int argc, char** argv){
 
   // Instantiate the modules and configure them.
-  // NOTE
   file_reader* reader(new file_reader);
   photon_propagator* propagator(new photon_propagator);   
   file_writer* writer(new file_writer);
 
   string filename;
-  reader.set_input_filename(filename);
+  reader->set_input_filename(filename);
   
   tray t;
   t.add(reader);
