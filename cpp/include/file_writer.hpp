@@ -6,6 +6,6 @@
 
 #include <module.hpp>
 
-class file_writer : public module {
+class FileWriter : public Module {
 
 };

@@ -9,13 +9,13 @@
 
 using std::string;
 
-class file_reader : public module {
+class FileReader : public Module {
 	public:
 		void set_input_filename(string path)
 		{
-			_path = path;
+			path_ = path;
 		}
 	private:
-		string _path;
+		string path_;
 };
 

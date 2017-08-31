@@ -9,20 +9,20 @@
 #include <module.hpp>
 #include <iostream>
 
-class tray {
+class Tray {
 public:
   // NOTE: Don't use bald pointer.  Decide which kind
   //       of smart pointer is appropriate.
-  void add(module*);
+  void add(Module*);
   void execute(unsigned);
   
 private:
 };
 
-void tray::execute(unsigned i=100){
+void Tray::execute(unsigned i=100){
 	std::cout << "Start executing" << std::endl;
 };
 
-void tray::add(module* m){
+void Tray::add(Module* m){
 	std::cout << "added" << std::endl;
 };

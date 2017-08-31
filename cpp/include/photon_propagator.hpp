@@ -6,6 +6,6 @@
 
 #include <module.hpp>
 
-class photon_propagator : public module {
+class PhotonPropagator : public Module {
 
 };

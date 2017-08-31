@@ -6,6 +6,6 @@
 
 #include <module.hpp>
 
-class writer : public module {
+class Writer : public Module {
 
 };

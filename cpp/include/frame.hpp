@@ -3,6 +3,6 @@
  */
 #pragma once
 
-class frame {
+class Frame {
 
 };
