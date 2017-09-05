@@ -19,6 +19,6 @@ int main(int argc, char** argv){
   t.add(reader);
   t.add(propagator);
   t.add(writer);
-  t.execute();  
+  t.execute();
 }
  
