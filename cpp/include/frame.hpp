@@ -3,12 +3,11 @@
  */
 #pragma once
 
+#include <iostream>
 #include <string>
 #include <map>
 #include <memory>
 #include <vector>
-
-#include <iostream>
 
 
 class FrameObject {
@@ -19,11 +18,7 @@ class FrameObject {
     const std::string get_pretty_name() const { return pretty_name_; }
 };
 
-std::ostream& operator<<(std::ostream& os, const FrameObject& fo)
-{
-  return os << fo.get_pretty_name();
-}
-
+std::ostream& operator<<(std::ostream& os, const FrameObject& fo);
 
 
 class Frame {
@@ -74,13 +69,4 @@ class Frame {
 
 };
 
-std::ostream& operator<<(std::ostream& os, const Frame& f)
-{
-  os << "Frame:";
-  for (const std::string& key : f.keys())
-  {
-    auto obj = f.get(key);
-    os << "\n\t" << key << ":\t" << *obj << " (" << obj << ")";
-  }
-  return os;
-}
+std::ostream& operator<<(std::ostream& os, const Frame& f);

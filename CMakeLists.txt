@@ -8,6 +8,10 @@ include_directories(cpp/include)
 include_directories(${Boost_INCLUDE_DIRS})
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+
+add_library(frame SHARED cpp/src/frame.cpp)
+target_link_libraries(frame pthread ${Boost_LIBRARIES})
+
 add_library(photon_propagator SHARED cpp/src/photon_propagator.cpp)
 target_link_libraries(photon_propagator pthread ${Boost_LIBRARIES})
 
