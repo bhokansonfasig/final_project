@@ -3,9 +3,6 @@
 #include <photon_propagator.hpp>
 #include <tray.hpp>
 
-#include <frame.hpp>
-#include <iostream>
-
 using std::string;
 
 int main(int argc, char** argv){
@@ -22,10 +19,6 @@ int main(int argc, char** argv){
   t.add(reader);
   t.add(propagator);
   t.add(writer);
-  t.execute();  
-
-  std::shared_ptr<FrameObject> obj(new FrameObject);
-  Frame frame;
-  std::cout << frame << std::endl;
+  t.execute();
 }
  

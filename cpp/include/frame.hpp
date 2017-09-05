@@ -39,33 +39,15 @@ class Frame {
     // Move Assignment
     Frame& operator=(Frame&&) = default;
 
-    void add(const std::string& key, std::shared_ptr<FrameObject> object_ptr)
-    {
-      std::cout << "Adding " << key << "...";
-      if (object_map_[key]==nullptr) {object_map_[key] = object_ptr;}
-      else {std::cout << " FAILED";} // Raise an error here?
-      std::cout << std::endl;
-    }
+    void add(const std::string& key, std::shared_ptr<FrameObject> object_ptr);
 
-    std::shared_ptr<FrameObject> get(const std::string& key) const
-    {
-      auto iter = object_map_.find(key);
-      if (iter!=object_map_.end()) { return iter->second; }
-      else { return nullptr; }
-    }
+    std::shared_ptr<FrameObject> get(const std::string& key) const;
 
-    void remove(const std::string& key)
-    { std::cout << "Removing " << key << std::endl; object_map_[key] = nullptr; }
+    void remove(const std::string& key);
 
-    const std::vector<std::string> keys() const
-    {
-      std::vector<std::string> keys;
-      for (auto const& map_pair : object_map_)
-      {
-        if (map_pair.second!=nullptr) { keys.push_back(map_pair.first); }
-      }
-      return keys;
-    }
+    const std::vector<std::string> keys() const;
+
+    const bool empty() const;
 
 };
 
